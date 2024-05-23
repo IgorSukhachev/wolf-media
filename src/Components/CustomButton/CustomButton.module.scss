@@ -1,0 +1,41 @@
+@import '/src/vendor/variables';
+.button {
+	width: var(--button-width, auto);
+	height: var(--button-height, auto);
+	cursor: pointer;
+}
+
+.transparent {
+	background-color: transparent;
+	border: 2px solid $white;
+	color: $white;
+	font-weight: 500;
+	transition: 0.3s ease-in;
+}
+
+.transparent:hover {
+	background-color: $white;
+	color: $background;
+}
+
+.transparent:focus {
+	background-color: $color4;
+	border: none;
+	color: $white;
+}
+
+.orange {
+	background-color: $accent-color;
+	border: none;
+	color: $white;
+	font-weight: 500;
+	transition: 0.3s ease-in;
+}
+
+.orange:hover {
+	background-color: $accent-color2;
+}
+
+.orange:focus {
+	background-color: $accent-color3;
+}
